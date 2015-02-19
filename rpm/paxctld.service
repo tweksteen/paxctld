@@ -1,0 +1,9 @@
+[Unit]
+Description=PaX flags maintenance daemon
+After=syslog.target
+
+[Service]
+ExecStart=/sbin/paxctld
+
+[Install]
+WantedBy=multi-user.target
